@@ -3484,3 +3484,9 @@ iframe {
 	right: 0px;
 	bottom: 0px;
 }
+.txt1{
+	transition: color 0.3s;
+}
+.txt1:hover{
+	color: 	#d04296;
+}
