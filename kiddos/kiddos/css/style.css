@@ -5235,13 +5235,11 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
-.bg-primary {
-  background-color: #007bff !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0062cc !important; }
+  background-color: #d04296 !important; }
 
 .bg-secondary {
   background-color: #6c757d !important; }
@@ -8416,19 +8414,19 @@ h1, h2, h3, h4, h5,
   background: #fff !important; }
 
 .bg-primary {
-  background: #1eaaf1; }
+  background: #d04296; }
 
 .bg-secondary {
   background: #fda638 !important; }
 
 .bg-tertiary {
-  background: #8cc152; }
+  background: #d0c342; }
 
 .bg-quarternary {
-  background: #f1453d; }
+  background: #424fd0; }
 
 .bg-fifth {
-  background: #5d50c6; }
+  background: #42d07c; }
 
 .ftc-no-pb {
   padding-bottom: 0 !important; }
@@ -8883,8 +8881,6 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden; }
 
-.bg-primary {
-  background: #1eaaf1 !important; }
 
 .about-author .desc h3 {
   font-size: 24px; }
@@ -9705,9 +9701,10 @@ start my code:
   background: white;
   border-radius: 25px;
   align-items: right;
+  transition: background-color 0.5s;
 }
 .button-a:hover{
-  background: pink;
+  background-color: pink;
   color: pink;
 }
 .credits{
@@ -9777,23 +9774,52 @@ start my code:
 }
 .popupCloseButton {
   background-color: #fff;
-  border: 3px solid #999;
+  border: 2px solid #999;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
   font-family: arial;
   font-weight: bold;
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 0px;
+  right: 0px;
   font-size: 25px;
   line-height: 30px;
   width: 30px;
   height: 30px;
   text-align: center;
+  transition: background-color 0.5s;
 }
 .popupCloseButton:hover {
   background-color: #ccc;
 }
 
 /* Popup box BEGIN */
+
+/* COLOR OF TEXT */
+.white{
+  color: white !important;
+}
+.black{
+  color: black !important;
+}
+@media screen and (max-width: 992px){
+  .del992{
+    display: none;
+    color: red;
+  }
+} 
+.mainpic-item{
+  height: 600px;
+  background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 600px;
+      position: relative;
+      z-index: 0; 
+      font-size: 60px;
+          color: #fff;
+}
+.mainpic span{
+  display: block;
+}
